@@ -1,0 +1,341 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.animation{
+    display: flex;
+   gap:10px;
+   height: 300px;
+   width:600px;
+   /* background-color: gray; */
+   align-items: center;
+   justify-content: center;
+position: relative;
+}
+
+.bubble1{
+    height: 30px;
+    width:30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    border-radius:50% ;
+    background-color: crimson;
+    position: absolute;
+    /* animation:bubble 5s infinite ease; */
+    /* opacity: 0.5; */
+    background-color: transparent;
+    
+}
+
+.div{
+    position: absolute;
+    left:15%;
+    top:10%
+
+}
+
+
+.background{
+    width:0%;
+    /* opacity: 0; */
+    height:100%;
+    /* background-color: blue; */
+    position: relative;
+    z-index: -2;
+    animation: reveal2 1s ease-in-out 6s;
+
+}
+
+.gray{
+    background-color: #3f88c5
+    ;
+    /* animation: reveal2 1s ease 6s; */
+}
+
+.gold{
+    background-color: #ffba08
+    ;
+    /* animation: reveal2 1s ease 6s; */
+}
+
+@keyframes reveal2{
+    0%{
+        width:25%;
+        /* opacity: 1; */
+    }
+    100%{
+        width:0%;
+        /* opacity: 0; */
+    }
+}
+
+.pink::before ,.green::before, .purple::before ,.blue::before{
+    width:0px;
+    height: 30px;
+    position: absolute;
+content:'';
+background-color:#FED049;
+z-index:-1;
+animation: box 0.6s ease 5s;
+
+}
+
+@keyframes box{
+    0%{
+        width:30px;
+        
+    }
+    100%{
+        width:0;
+    }
+}
+
+.yellow::before ,.orange::before, .black::before ,.red::before{
+    width:0px;
+    height: 30px;
+    position: absolute;
+content:'';
+background-color:#FB2576;
+z-index:-1;
+animation: box 0.6s ease 5s;
+
+}
+
+
+@keyframes bubble {
+0%{
+    top:20px;
+    /* opacity: 1; */
+    background-color: rgba(0, 139, 139, 0.534);
+}
+
+
+100%{
+    top:100px;
+    /* opacity: 0.5; */
+    background-color: transparent;
+}
+
+}
+
+
+@keyframes bubble2 {
+    0%{
+        top:20px;
+        /* opacity: 1; */
+        background-color: rgba(255, 0, 0, 0.664);
+    }
+    
+    
+    100%{
+        top:100px;
+        /* opacity: 0.5; */
+        background-color: transparent;
+    }
+    
+    }
+
+
+    @keyframes bubble3 {
+        0%{
+            top:20px;
+            /* opacity: 1; */
+            background-color: rgba(0, 128, 0, 0.562);
+        }
+        
+        
+        100%{
+            top:100px;
+            /* opacity: 0.5; */
+            background-color: transparent;
+        }
+        
+        }
+
+        @keyframes bubble4 {
+            0%{
+                top:20px;
+                /* opacity: 1; */
+                background-color: rgba(255, 255, 0, 0.541);
+            }
+            
+            
+            100%{
+                top:100px;
+                /* opacity: 0.5; */
+                background-color: transparent;
+            }
+            
+            }
+
+            @keyframes bubble5 {
+                0%{
+                    top:20px;
+                    /* opacity: 1; */
+                    background-color: rgba(128, 0, 128, 0.568);
+                }
+                
+                
+                100%{
+                    top:100px;
+                    /* opacity: 0.5; */
+                    background-color: transparent;
+                }
+                
+                }
+
+
+                @keyframes bubble6 {
+                    0%{
+                        top:20px;
+                        /* opacity: 1; */
+                        background-color: rgba(255, 166, 0, 0.61);
+                    }
+                    
+                    
+                    100%{
+                        top:100px;
+                        /* opacity: 0.5; */
+                        background-color: transparent;
+                    }
+                    
+                    }
+
+
+                    @keyframes bubble7 {
+                        0%{
+                            top:20px;
+                            /* opacity: 1; */
+                            background-color:#2dcddf91;
+                        }
+                        
+                        
+                        100%{
+                            top:100px;
+                            /* opacity: 0.5; */
+                            background-color: transparent;
+                        }
+                        
+                        }
+
+                        @keyframes bubble8 {
+                            0%{
+                                top:20px;
+                                /* opacity: 1; */
+                                background-color: #181d3196;
+                            }
+                            
+                            
+                            100%{
+                                top:100px;
+                                /* opacity: 0.5; */
+                                background-color: transparent;
+                            }
+                            
+                            }
+                    
+
+                        
+                    
+
+
+
+p {
+    font-size: 15px;
+   animation: reveal 1s ease 3.5s;
+}
+
+@keyframes reveal{
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 0.5;
+        font-size:25px ;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.pink{
+  
+    top:100px;
+    left:50px;
+    animation: bubble 5s ease 0.2s;
+    background-color: transparent;
+    
+}
+
+
+
+.red{
+ 
+    top:100px;
+    left:90px;
+    animation:bubble2 5s ease 0.4s;
+    background-color: transparent;
+}
+
+.green{
+    background-color: transparent;
+    top:100px;
+    left:130px;
+    animation:bubble3 5s ease 0.6s;
+}
+
+.transparent{
+    background-color: transparent;
+    top:100px;
+    left:160px;
+    /* animation:bubble 5s ease 0.8s; */
+}
+.yellow{
+    background-color: transparent;
+    top:100px;
+    left:200px;
+    animation:bubble4 5s ease 1s;
+}
+
+.purple{
+    background-color: transparent;
+    top:100px;
+    left:240px;
+    animation:bubble5 5s ease 1.2s;
+}
+
+.orange{
+    background-color: transparent;
+    top:100px;
+    left:280px;
+    animation:bubble6 5s ease 1s;
+}
+
+.blue{
+    background-color:transparent;
+    top:100px;
+    left:320px;
+    animation:bubble7 5s  ease 1.1s;
+}
+
+.black{
+    background-color: transparent;
+    top:100px;
+    left:360px;
+    animation:bubble 5s ease 1.2s;
+}
+
+
